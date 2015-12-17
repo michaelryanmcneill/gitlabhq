@@ -175,11 +175,11 @@ module ProjectsHelper
 
   def default_url_to_repo(project = nil)
     project = project || @project
-    current_user ? project.url_to_repo : project.http_url_to_repo
+    project.http_url_to_repo
   end
 
   def default_clone_protocol
-    current_user ? "ssh" : "http"
+    "http"
   end
 
   def project_last_activity(project)
