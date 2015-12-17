@@ -4,11 +4,11 @@ module AppearancesHelper
   end
 
   def brand_title
-    'GitLab Community Edition'
+    'ITS Source Control Service'
   end
 
   def brand_image
-    nil
+    image_tag 'old_well.png'
   end
 
   def brand_text
@@ -16,6 +16,6 @@ module AppearancesHelper
   end
 
   def brand_header_logo
-    render 'shared/logo.svg'
+    image_tag 'old_well.png'
   end
 end
