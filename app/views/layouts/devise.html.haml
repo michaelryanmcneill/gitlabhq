@@ -11,13 +11,12 @@
           .col-sm-5.pull-right
             = yield
           .col-sm-7.brand-holder.pull-left
-            %h1
-              = brand_title
+            %h1 ITS Source Control Service
             - if brand_item
               = brand_image
               = brand_text
             - else
-              %h3 Open source software to collaborate on code
+              %h3 Powered by the Open Source GitLab project
 
               %p
                 Manage git repositories with fine grained access controls that keep your code secure.
@@ -31,5 +30,4 @@
     .container
       .footer-links
         = link_to "Explore", explore_root_path
-        = link_to "Help", help_path
-        = link_to "About GitLab", "https://about.gitlab.com/"
+        = link_to "Powered by GitLab", "https://about.gitlab.com/"
